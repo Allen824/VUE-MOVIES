@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <form @submit.prevent="SearchMovies()" class="search-box">
-      <input type="text" placeholder="Search" v-model="search">
+      <input type="text" placeholder="Search for a Movie or Franchise Here" v-model="search">
       <input type="submit" value="Submit">
     </form>
       <div class="movies" v-for="movie in movies" :key="movie.imdbID">
@@ -93,7 +93,7 @@ export default {
           transition: 0.4s;
 
           &::placeholder {
-            color: rgb(184, 184, 184);
+            color: rgb(77, 77, 77);
           }
 
           &:hover {
@@ -106,7 +106,7 @@ export default {
             background-color: rgb(255, 255, 255);
             padding: 16px;
             border-radius: 8px;
-            color: rgb(184, 184, 184);
+            color: rgb(77, 77, 77);
             font-size: 20px;
             text-transform: uppercase;
             transition: 0.4s;
